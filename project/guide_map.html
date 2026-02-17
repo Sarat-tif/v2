@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>final_project_work</title>
+    <link rel="stylesheet" href="./style.css">
+
+  </head>
+    
+  <body>
+  <html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Glasgow Visitor Guide Map</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Mapbox GL JS v3 -->
+  <link href="https://api.mapbox.com/mapbox-gl-js/v3.18.1/mapbox-gl.css" rel="stylesheet" />
+  <script src="https://api.mapbox.com/mapbox-gl-js/v3.18.1/mapbox-gl.js"></script>
+
+  <!-- Mapbox Geocoder -->
+  <link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v5.1.0/mapbox-gl-geocoder.css" />
+  <script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v5.1.0/mapbox-gl-geocoder.min.js"></script>
+
+  <!-- Your CSS -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <div class="app">
+
+    <!-- HEADER -->
+    <header class="app-header">
+      <div class="brand">
+        <div class="brand-mark">GT</div>
+        <div class="brand-text">
+          <h1>Glasgow Visitor Guide Map</h1>
+          <p>Find Healthcare, Tourist hotspots, Transport hubs, Spas and CW Arena in Glasgow.</p>
+        </div>
+      </div>
+
+      <nav class="app-nav">
+        <a href="#" class="nav-link nav-link-active">Map</a>
+        <a href="https://www.glasgow.gov.uk/" target="_blank" class="nav-link">City Open Data</a>
+      </nav>
+    </header>
+
+    <!-- MAIN BODY -->
+    <main class="app-body">
+
+      <!-- MAP PANEL -->
+      <section class="map-panel">
+        <div id="map"></div>
+        <div id="coords"></div>
+      </section>
+
+      <!-- SIDE PANEL -->
+      <aside class="side-panel">
+
+        <!-- SEARCH -->
+        <section class="panel-section">
+          <h2>Search & Filter</h2>
+          <p class="panel-description">Search within Glasgow.</p>
+          <div id="geocoder-container"></div>
+        </section>
+
+        <!-- FILTERS -->
+               <section class="panel-section">
+          <h3>Explore Here !</h3>
+
+          <div id="menu">
+            <label class="container">
+              <input id="NHS" type="radio" name="radio" checked />
+              <span class="checkmark"></span> Healthcare
+            </label>
+
+            <label class="container">
+              <input id="hotspot" type="radio" name="radio" />
+              <span class="checkmark"></span> Tourist Hotspot
+            </label>
+
+            <label class="container">
+              <input id="trans_hub" type="radio" name="radio" />
+              <span class="checkmark"></span> Transport Hub
+            </label>
+
+            <label class="container">
+              <input id="spa" type="radio" name="radio" />
+              <span class="checkmark"></span> Spa
+            </label>
+
+            <label class="container">
+              <input id="cw" type="radio" name="radio" />
+              <span class="checkmark"></span> Commonwealth Games Arena
+            </label>
+          </div>
+          <h2>ㅤ</h2>
+           <h2>Legend & Info</h2>
+          <ul class="info-list">
+            <li>Healthcare shows hospitals & pharmacies.</li>
+            <li>Tourist Hotspot shows tourist places.</li>
+            <li>Transport Hub includes airport, railway & bus stations.</li>
+            <li>Commonwealth Arena shows all CW2026 game places.</li>
+          </ul>
+
+          <p class="panel-description">
+            This map uses Glasgow open data uploaded by 3133562R.
+          </p>
+        </section>
+
+      </aside>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="app-footer">
+      <p>
+        Data source:
+        <a href="https://www.glasgow.gov.uk/" target="_blank">Glasgow City Council Open Data</a>
+      </p>
+      <p>Map built with Mapbox GL JS and Mapbox Datasets.</p>
+    </footer>
+
+  </div>
+
+  <!-- Your JS -->
+  <script src="script.js"></script>
+</body>
+</html>
+    <script  src="./script.js"></script>
+
+  </body>
+  
+</html>
